@@ -10,7 +10,6 @@
 
 <body>
   <h1>Vue.js examples</h1>
-  <div id="content"></div>
 
   <div id="app">
     {{message}}
@@ -54,7 +53,7 @@
       {{ message }}
       <button v-on:click="reverseMessage">Reverse Message</button>
     </p>
-    {{ counter}}
+    <span v-on:mouseover="updateCounter">{{ counter}}</span>
     <button v-on:mouseover="updateCounter">Update</button>
 
     <h3>Input handling</h3>
