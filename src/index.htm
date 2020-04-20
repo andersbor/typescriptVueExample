@@ -62,22 +62,12 @@
     <input type="checkbox" id="checkbox" v-model="checked">
     <label for="checkbox">{{ checked }}</label>
 
-    <p v-if="checked"> <!-- conditional rendering -->
+    <p v-if="checked">
+      <!-- conditional rendering -->
       <input v-model.lazy="anotherMessage" placeholder="edit me">
       Message is: {{ anotherMessage }}
     </p>
   </div>
-
-
-  <!--script>
-    var app = new Vue({
-      el: '#app',
-      data: {
-        message: 'Hello Vue!',
-        name: 'Anders'
-      }
-    })
-  </script-->
 
   <script src="bundle.js"></script>
 </body>

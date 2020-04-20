@@ -1,5 +1,3 @@
-//import Vue from 'vue'
-
 interface Person {
     firstName: string;
     lastName: string;
@@ -30,12 +28,3 @@ var app = new Vue({
         }
     }
 })
-
-/*
-function greeter(person: Person): string {
-    return "Hello, " + person.firstName + " " + person.lastName;
-}
-
-let element: HTMLDivElement = <HTMLDivElement>document.getElementById("content");
-element.innerHTML = greeter(user);
-*/
