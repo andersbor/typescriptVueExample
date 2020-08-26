@@ -19,11 +19,11 @@ var app = new Vue({
         age: 0
     },
     methods: {
-        reverseMessage: function () {
+        reverseMessage() {
             this.message = this.message.split('').reverse().join('');
             this.prime = 11
         },
-        updateCounter: function () {
+        updateCounter() {
             this.counter++
         }
     }

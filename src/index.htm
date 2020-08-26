@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Vue.js example</title>
   <link rel="stylesheet" type="text/css" href="bundle.css">
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"/>
 </head>
 
 <body>
@@ -14,15 +14,15 @@
   <div id="app">
     {{message}}
     {{ name }}
-    {{prime}}
+    {{prime }}
     {{ weekdays}}
 
     {{ person.firstName}} {{person.lastName}}
 
     <h3>Week days</h3>
     <ul>
-      <li v-for="weekday in weekdays">
-        {{weekday}}
+      <li v-for="w in weekdays">
+        {{w}}
       </li>
     </ul>
 
