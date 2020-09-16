@@ -14,12 +14,13 @@
   <h1>Vue.js examples</h1>
 
   <div id="app">
-    {{message}}
+    {{ message }}
     {{ name }}
-    {{prime }}
+    {{ prime }}
     {{ weekdays}}
 
-    {{ person.firstName}} {{person.lastName}}
+    {{ person2 }}
+    {{ person2.firstName }} {{ person2.lastName }}
 
     <h3>Week days</h3>
     <ul>
@@ -44,15 +45,15 @@
 
     <h3>Iterating an object</h3>
     <ul>
-      <li v-for="(value, name, index) in person">
+      <li v-for="(value, name, index) in person2">
         {{index}} {{name}} {{value}}
       </li>
     </ul>
 
     <h3>Event handling</h3>
 
-    <span v-on:mouseover="updateCounter">{{ counter}}</span>
-    <button v-on:mouseover="updateCounter">Update</button>
+    <span v-on:mouseover="updateCounter()">{{ counter}}</span>
+    <button v-on:mouseover="updateCounter()">Update</button>
 
     <h3>Input handling</h3>
 
