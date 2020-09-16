@@ -14,17 +14,25 @@ var app = new Vue({
         person: { firstName: "John", lastName: "Doe" }, // object
         teachers: [user, { firstName: "Jamshid", lastName: "E" }, { firstName: "Michael", lastName: "H" }],
         counter: 0,
+        myNumber: 0,
+        inputMessage: "",
+        outputMessage: "",
         anotherMessage: "",
         checked: false,
         age: 0
     },
     methods: {
-        reverseMessage() {
-            this.message = this.message.split('').reverse().join('');
-            this.prime = 11
+        reverse() { // side effects
+            this.outputMessage = this.inputMessage.split('').reverse().join('');
         },
-        updateCounter() {
+        reverseProperFunction(m: string) { // proper function, no side effects
+            return m.split('').reverse().join('');
+        },
+        updateCounter() { // side effects
             this.counter++
+        },
+        next(n: number): number {
+            return n + 1;
         }
     }
 })
